@@ -22,6 +22,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <footer className="fixed bottom-0 left-0 right-0 bg-gray-800 text-white text-center p-4">"soo"
+          </footer>
         {children}
       </body>
     </html>
