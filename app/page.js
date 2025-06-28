@@ -1,3 +1,6 @@
+import MyForm from "./components/forminput";
+
+
 // Example component in Next.js
 export default function HomePage() {
   // JavaScript logic here
@@ -6,8 +9,7 @@ export default function HomePage() {
   // JSX (HTML-like syntax) returned
   return (
     <div>
-      <h1>{title}</h1>
-      <p>This is a Next.js page with JSX syntax.</p>
+     <MyForm />
     </div>
   );
 }
