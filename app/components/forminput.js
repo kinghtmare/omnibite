@@ -9,7 +9,6 @@ function MyForm() {
     password: "",
     gender: "",
     country: "",
-    message: "",
   });
 
   const handleInputChange = (e) => {
@@ -101,7 +100,6 @@ function MyForm() {
           value={formState.country}
           onChange={handleInputChange}
         >
-
           <option value=" ">none</option>
           <option value="af">Afghanistan</option>
           <option value="al">Albania</option>
@@ -225,7 +223,9 @@ function MyForm() {
           <option value="kz">Kazakhstan</option>
           <option value="ke">Kenya</option>
           <option value="ki">Kiribati</option>
-          <option value="kp">Korea (the Democratic People's Republic of)</option>
+          <option value="kp">
+            Korea (the Democratic People's Republic of)
+          </option>
           <option value="kr">Korea (the Republic of)</option>
           <option value="kw">Kuwait</option>
           <option value="kg">Kyrgyzstan</option>
@@ -293,7 +293,9 @@ function MyForm() {
           <option value="ru">Russian Federation</option>
           <option value="rw">Rwanda</option>
           <option value="bl">Saint Barthélemy</option>
-          <option value="sh">Saint Helena, Ascension and Tristan da Cunha</option>
+          <option value="sh">
+            Saint Helena, Ascension and Tristan da Cunha
+          </option>
           <option value="kn">Saint Kitts and Nevis</option>
           <option value="lc">Saint Lucia</option>
           <option value="mf">Saint Martin (French part)</option>
@@ -314,7 +316,9 @@ function MyForm() {
           <option value="sb">Solomon Islands</option>
           <option value="so">Somalia</option>
           <option value="za">South Africa</option>
-          <option value="gs">South Georgia and the South Sandwich Islands</option>
+          <option value="gs">
+            South Georgia and the South Sandwich Islands
+          </option>
           <option value="ss">South Sudan</option>
           <option value="es">Spain</option>
           <option value="lk">Sri Lanka</option>
@@ -341,7 +345,9 @@ function MyForm() {
           <option value="ug">Uganda</option>
           <option value="ua">Ukraine</option>
           <option value="ae">United Arab Emirates</option>
-          <option value="gb">United Kingdom of Great Britain and Northern Ireland</option>
+          <option value="gb">
+            United Kingdom of Great Britain and Northern Ireland
+          </option>
           <option value="um">United States Minor Outlying Islands</option>
           <option value="us">United States of America</option>
           <option value="uy">Uruguay</option>
@@ -356,7 +362,6 @@ function MyForm() {
           <option value="ye">Yemen</option>
           <option value="zm">Zambia</option>
           <option value="zw">Zimbabwe</option>
-
         </select>
       </div>
 
