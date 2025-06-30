@@ -2,7 +2,7 @@
 
 :root {
   --background: #ebebeb;
-  --foreground: #18230F;
+  --foreground: #18230f;
 }
 
 :root {
@@ -66,7 +66,7 @@ body {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -87,8 +87,7 @@ body {
 
 .nav-link.active::after {
   width: 100%;
-} 
-
+}
 
 /*form input styles */
 
@@ -100,12 +99,11 @@ body {
   border-radius: 12px;
   max-width: 600px;
   margin: 2rem auto; /* Added vertical margin */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: 1px solid #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   padding-top: 2rem; /* Adds space between navbar and form */
   padding-bottom: 2rem;
-
 }
 
 /* Form title */
@@ -214,7 +212,7 @@ body {
 
 /* Radio button pulse animation */
 .radio-group label::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -289,7 +287,7 @@ body {
 
 /* Radio button inner dot */
 .radio-group input[type="radio"]:checked::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
@@ -394,7 +392,7 @@ body {
     padding: 1.5rem;
     border-radius: 8px;
   }
-  
+
   .radio-group {
     flex-direction: column;
     gap: 0.5rem;
