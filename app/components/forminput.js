@@ -35,6 +35,7 @@ function MyForm() {
           name="username"
           value={formState.username}
           onChange={handleInputChange}
+          required
         />
       </div>
 
@@ -61,6 +62,7 @@ function MyForm() {
           value={formState.password}
           onChange={handleInputChange}
           minLength="8"
+          required
         />
       </div>
 
@@ -75,6 +77,7 @@ function MyForm() {
               value="male"
               checked={formState.gender === "male"}
               onChange={handleInputChange}
+              required
             />
             Male
           </label>
@@ -85,6 +88,7 @@ function MyForm() {
               value="female"
               checked={formState.gender === "female"}
               onChange={handleInputChange}
+              required
             />
             Female
           </label>
@@ -99,8 +103,9 @@ function MyForm() {
           name="country"
           value={formState.country}
           onChange={handleInputChange}
+          required
         >
-          <option value=" ">none</option>
+          <option value="">none</option>
           <option value="af">Afghanistan</option>
           <option value="al">Albania</option>
           <option value="dz">Algeria</option>
