@@ -25,27 +25,72 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* navigation style */
 .navbar {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+  background-color: #f8f9fa;
   padding: 1rem 2rem;
-  background-color: #171717;
-  color: #ededed;
-  border-bottom: 1px solid #333;
-   justify-content: right; /* Move navbar links to the right */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar a {
-  color: #ededed;
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #333;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.navbar a:hover {
-  color: #b01616;
+.nav-link:hover {
+  color: #2418c3;
 }
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0b1ac5;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active link styling */
+.nav-link.active {
+  color: #0070f3;
+}
+
+.nav-link.active::after {
+  width: 100%;
+} 
+
+
+/*form input styles */
 
 /* Form container */
 .form-container {
@@ -54,10 +99,13 @@ body {
   padding: 2rem;
   border-radius: 12px;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 2rem auto; /* Added vertical margin */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border: 1px solid #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding-top: 2rem; /* Adds space between navbar and form */
+  padding-bottom: 2rem;
+
 }
 
 /* Form title */
