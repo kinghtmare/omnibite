@@ -8,7 +8,6 @@ function MyForm() {
     email: '',
     password: '',
     gender: '',
-    interests: [],
     country: '',
     message: ''
   });
@@ -16,16 +15,6 @@ function MyForm() {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormState(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleCheckboxChange = (e) => {
-    const { name, value, checked } = e.target;
-    setFormState(prev => {
-      const newInterests = checked
-        ? [...prev.interests, value]
-        : prev.interests.filter(item => item !== value);
-      return { ...prev, interests: newInterests };
-    });
   };
 
   const handleSubmit = (e) => {
@@ -36,10 +25,10 @@ function MyForm() {
 
   return (
     <form onSubmit={handleSubmit} className='form-container'>
-      <h2 className='form-title'>Registration Form</h2>
-      
+      <h2 className='form-title'>Welcome to Omnibite</h2>
+
       {/* Text Input */}
-      <div className='username-input'>
+      <div className='form-group'>
         <label htmlFor="username">Username:</label>
         <input 
           type="text" 
@@ -51,7 +40,7 @@ function MyForm() {
       </div>
       
       {/* Email Input */}
-      <div className='email-input'>
+      <div className='form-group'>
         <label htmlFor="email">Email:</label>
         <input 
           type="email" 
@@ -64,7 +53,7 @@ function MyForm() {
       </div>
       
       {/* Password Input */}
-      <div className='password-input'>
+      <div className='form-group'>
         <label htmlFor="password">Password:</label>
         <input 
           type="password" 
@@ -77,33 +66,34 @@ function MyForm() {
       </div>
       
       {/* Radio Buttons */}
-      <div className='gender-input'>
+      <div className='form-group'>
         <span>Gender:</span>
-        <input 
-          type="radio" 
-          id="male" 
-          name="gender" 
-          value="male" 
-          checked={formState.gender === 'male'}
-          onChange={handleInputChange}
-        />
-        <label htmlFor="male">Male</label>
-        
-        <input 
-          type="radio" 
-          id="female" 
-          name="gender" 
-          value="female" 
-          checked={formState.gender === 'female'}
-          onChange={handleInputChange}
-        />
-        <label htmlFor="female">Female</label>
+        <div className='radio-group'>
+          <label>
+            <input 
+              type="radio" 
+              name="gender" 
+              value="male" 
+              checked={formState.gender === 'male'}
+              onChange={handleInputChange}
+            />
+            Male
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              name="gender" 
+              value="female" 
+              checked={formState.gender === 'female'}
+              onChange={handleInputChange}
+            />
+            Female
+          </label>
+        </div>
       </div>
       
-      
-      
       {/* Select Dropdown */}
-      <div className='country-input'>
+      <div className='form-group'>
         <label htmlFor="country">Country:</label>
         <select 
           id="country" 
@@ -118,8 +108,7 @@ function MyForm() {
         </select>
       </div>
       
-      
-      
+    
       {/* Submit Button */}
       <button className='submit-button' type="submit">Submit Form</button>
     </form>
