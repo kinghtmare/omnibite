@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+  :root {
   --background: #ebebeb;
   --foreground: #18230f;
 }
@@ -17,19 +17,20 @@
     --background: #000000;
     --foreground: #ffffff;
   }
-}
+  }
 
-body {
+  body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 /* navigation style */
 .navbar {
-  background-color: #f8f9fa;
+  /*background-color: #f8f9fa;*/
   padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(93, 93, 93, 0.156);
 }
 
 .navbar-content {
@@ -44,7 +45,7 @@ body {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #333;
+  color: #fafafa;
 }
 
 .nav-links {
@@ -53,7 +54,7 @@ body {
 }
 
 .nav-link {
-  color: #333;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   padding: 0.5rem 0;

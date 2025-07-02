@@ -24,7 +24,7 @@ function MyForm() {
 
   return (
     <form onSubmit={handleSubmit} className="form-container">
-      <h2 className="form-title">Welcome to Omnibite</h2>
+      <h2 className="form-title">are you sure?</h2>
 
       {/* Text Input */}
       <div className="form-group">
