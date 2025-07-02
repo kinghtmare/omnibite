@@ -374,7 +374,16 @@ function MyForm() {
       <button className="submit-button" type="submit">
         Submit Form
       </button>
+
+     <button
+       className="submit-button"
+       type="button"
+       onClick={() => window.location.href = "http://localhost:3000/home_page"}
+     >
+      log in
+     </button>
     </form>
+
   );
 }
 
